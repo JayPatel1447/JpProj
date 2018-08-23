@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="imageView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="625.0" style="-fx-background-radius: 15px; -fx-background-color: #273445;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+   <children>
+      <Label fx:id="SignIn" layoutX="247.0" layoutY="53.0" onDragDetected="#LogIn" prefHeight="49.0" prefWidth="109.0" text="Sign In" textFill="#f5f8f4">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Patel943" layoutX="186.0" layoutY="130.0" onAction="#LogIn" prefHeight="49.0" prefWidth="250.0" promptText="       UserName" style="-fx-background-radius: 15px;">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="Password" layoutX="186.0" layoutY="215.0" onAction="#LogIn" prefHeight="49.0" prefWidth="250.0" promptText="       Password" style="-fx-background-radius: 15px;">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="Login" layoutX="170.0" layoutY="307.0" mnemonicParsing="false" onAction="#LogIn" prefHeight="58.0" prefWidth="282.0" style="-fx-background-radius: 15px;" text="Login">
+         <font>
+            <Font name="Bell MT Bold" size="26.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="Remember" layoutX="107.0" layoutY="388.0" mnemonicParsing="false" onAction="#RememberMe" style="-fx-background-color: .;" text="Remember Me" textFill="#0948f5" />
+      <Hyperlink fx:id="Forgot" layoutX="389.0" layoutY="384.0" text="Forgot Password?" />
+      <ImageView fitHeight="73.0" fitWidth="127.0" layoutX="531.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/lock.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
