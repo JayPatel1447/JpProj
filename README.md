@@ -1,2 +1,1 @@
-# JpProj
-Bagel Shop
+# Bagel Shop
